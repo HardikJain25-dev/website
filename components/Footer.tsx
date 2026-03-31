@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-10 place-items-center">
           <div>
             <h4 className="font-semibold text-foreground mb-4">About</h4>
             <ul className="space-y-2">

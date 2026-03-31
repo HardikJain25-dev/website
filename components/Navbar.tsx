@@ -17,8 +17,8 @@ export function Navigation() {
     {
       name: "Home",
       link: "/",
-      subLabel: "VBUSS, Delhi",
-      subLink: "https://vbuss.org/index.php/",
+      subLabel: "VBUSS Delhi",
+      subLink: "/vbuss",
     },
     {
       name: "About the Journal",

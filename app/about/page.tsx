@@ -27,7 +27,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 The International Journal of Bharatiya Knowledge System is an
-                annual multidisciplinary journal published by Vidya Bharati
+                Biannual multidisciplinary journal published by Vidya Bharati
                 Uchcha Shiksha Sansthan. This is a research based academic
                 journal that focuses on creating a repository of quality work,
                 in the fields of social sciences, literature, sciences, cultural
