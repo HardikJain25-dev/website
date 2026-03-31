@@ -207,9 +207,27 @@ const editorialBoard = [
 ];
 
 const stats = [
-  { label: "Published Articles", value: "22+", icon: FileText,   color: "from-blue-500/10 to-blue-600/5",},
-  { label: "Volumes", value: "2", icon: BookOpen, color: "from-green-500/10 to-green-600/5", },
-  { label: "Acceptance Rate", value: "39.2%", icon: Users, color: "from-purple-500/10 to-purple-600/5", },
+  {
+    label: "Published Articles",
+    value: "22+",
+    icon: FileText,
+    color: "from-blue-500/10 to-blue-600/5",
+    iconBg: "from-blue-500/15 to-blue-600/10",
+  },
+  {
+    label: "Volumes",
+    value: "2",
+    icon: BookOpen,
+    color: "from-emerald-500/10 to-emerald-600/5",
+    iconBg: "from-emerald-500/15 to-emerald-600/10",
+  },
+  {
+    label: "Acceptance Rate",
+    value: "39.2%",
+    icon: Users,
+    color: "from-amber-500/10 to-amber-600/5",
+    iconBg: "from-amber-500/15 to-amber-600/10",
+  },
  
 ];
 
@@ -218,8 +236,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative pt-30">
-        <div className="h-1 bg-secondary"></div>
+      <section className="relative pt-40">
+        {/* <div className="h-1 bg-secondary"></div> */}
         <div className="bg-muted/50">
           <div className="max-w-7xl mx-auto px-6">
             {/* Search Overlay */}
@@ -255,7 +273,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 ">
           {stats.map((stat, i) => (
             <div key={i} className={`flex items-center gap-4 p-2 rounded-2xl bg-gradient-to-br ${stat.color}`}>
-              <div className="size-12 rounded-xl flex items-center justify-center bg-gradient-to-br-from-blue-500/10 to-blue-600/5">
+              <div className={`size-12 rounded-xl flex items-center justify-center bg-gradient-to-br ${stat.iconBg}`}>
                 <stat.icon className="size-5 text-primary " />
               </div>
               <div>
@@ -362,10 +380,6 @@ export default function Home() {
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1 min-w-0">
-                     
-                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">
-                        {pub.volume};
-                      </span>
                       <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2 mt-1">
                         {pub.title}
                       </h3>
@@ -496,9 +510,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <a
               href="/submit-paper"
-              className="bg-gradient-to-br-from-blue-500/10 to-blue-600/5 rounded-2xl border-2 border-dashed border-primary/30  p-8 text-center hover:border-primary  transition-all "
+              className="group rounded-2xl border border-border bg-gradient-to-br from-blue-500/10 to-blue-600/5 p-8 text-center hover:shadow-md transition-all"
             >
-              <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors ">
+              <div className="size-14 rounded-2xl bg-gradient-to-br from-blue-500/15 to-blue-600/10 flex items-center justify-center mx-auto mb-4 transition-colors">
                 <FileText className="size-7 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground text-lg">
@@ -510,9 +524,9 @@ export default function Home() {
             </a>
             <a
               href="/submission-guidelines"
-              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-gradient-to-br-from-green-500/10 to-green-600/5 p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
+              className="group rounded-2xl border border-border bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 p-8 text-center hover:shadow-md transition-all"
             >
-              <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <div className="size-14 rounded-2xl bg-gradient-to-br from-emerald-500/15 to-emerald-600/10 flex items-center justify-center mx-auto mb-4 transition-colors">
                 <BookOpen className="size-7 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground text-lg">
@@ -524,9 +538,9 @@ export default function Home() {
             </a>
             <a
               href="/archives"
-              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-gradient-to-br-from-purple-500/10 to-purple-600/5 p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
+              className="group rounded-2xl border border-border bg-gradient-to-br from-amber-500/10 to-amber-600/5 p-8 text-center hover:shadow-md transition-all"
             >
-              <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <div className="size-14 rounded-2xl bg-gradient-to-br from-amber-500/15 to-amber-600/10 flex items-center justify-center mx-auto mb-4 transition-colors">
                 <Download className="size-7 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground text-lg">

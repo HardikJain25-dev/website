@@ -3,7 +3,7 @@ import { FileText, Shield, AlertTriangle, ArrowRight } from "lucide-react";
 
 export default function SubmissionGuidelinesPage() {
   return (
-    <main className="pt-30">
+    <main className="pt-40">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-border py-16 px-6">
         <div className="max-w-7xl mx-auto">
