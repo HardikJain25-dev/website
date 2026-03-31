@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-10">
           <div>
             <h4 className="font-semibold text-foreground mb-4">About</h4>
             <ul className="space-y-2">
@@ -99,7 +99,7 @@ export function Footer() {
               
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <ul className="space-y-2">
               <li>
@@ -129,7 +129,7 @@ export function Footer() {
                 Pin-201301, Uttar Pradesh
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">

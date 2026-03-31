@@ -2,7 +2,7 @@ import { Footer } from "@/components/Footer";
 import { Crown, Star, Users, Mail } from "lucide-react";
 
 const patron = {
-  name: "Prof. Kailash Sharma",
+  name: "Prof. Kailash Chan Sharma",
   role: "Patron",
   affiliation: "Chairman, Haryana State Higher Education Council, Haryana",
   email: "kailashcsg@gmail.com",
@@ -10,7 +10,7 @@ const patron = {
 
 const editorInChief = {
   name: "Prof. Kusha Tiwari",
-  role: "Editor-in-Chief & Managing Editor",
+  role: "Editor-in-Chief",
   affiliation: "Department of English, Shyam Lal College, University of Delhi",
   email: "ktiwari@shyamlal.du.ac.in",
 };
@@ -91,7 +91,7 @@ const boardMembers = [
     location: "Delhi",
   },
   {
-    name: "Prof. Surendra Kumar Sai",
+    name: "Prof. Surendra Kumar Sia",
     affiliation: "Professor, Department of Psychology, University of Delhi",
     email: "",
     location: "Delhi",
@@ -146,7 +146,7 @@ export default function EditorialBoardPage() {
             <div className="flex items-center gap-3 mb-6">
               <Star className="size-5 text-primary" />
               <h2 className="text-2xl font-bold text-foreground">
-                Editor-in-Chief &amp; Managing Editor
+                Editor-in-Chief
               </h2>
             </div>
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-border p-6">

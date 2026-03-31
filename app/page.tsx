@@ -151,14 +151,14 @@ const latestPublications = [
 
 const editorialBoard = [
   {
-    name: "Prof. Kailash Sharma",
+    name: "Prof. Kailash Chand Sharma",
     role: "Patron",
     affiliation: "Chairman, Haryana State Higher Education Council, Haryana",
     email: "kailashcsg@gmail.com",
   },
   {
     name: "Prof. Kusha Tiwari",
-    role: "Editor-in-Chief & Managing Editor",
+    role: "Editor-in-Chief",
     affiliation: "Department of English, Shyam Lal College, University of Delhi",
     email: "ktiwari@shyamlal.du.ac.in",
   },

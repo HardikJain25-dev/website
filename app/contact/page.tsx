@@ -20,7 +20,7 @@ export default function ContactPage() {
 
       {/* Content */}
       <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-card rounded-2xl border border-border p-8">
@@ -82,7 +82,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <div className="bg-card rounded-2xl border border-border p-6">
               <h3 className="font-semibold text-foreground mb-4">
                 Contact Information
@@ -198,7 +198,7 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -26,6 +26,8 @@ interface NavItemsProps {
   items: {
     name: string;
     link: string;
+    subLabel?: string;
+    subLink?: string;
   }[];
   className?: string;
   onItemClick?: () => void;
@@ -126,21 +128,38 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <div
           onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-800 dark:text-neutral-300"
+          className="relative"
           key={`link-${idx}`}
-          href={item.link}
         >
-          {hovered === idx && (
-            <motion.div
-              layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
-            />
+          <a
+            onClick={onItemClick}
+            className="relative block px-4 py-2 text-neutral-800 dark:text-neutral-300"
+            href={item.link}
+          >
+            {hovered === idx && (
+              <motion.div
+                layoutId="hovered"
+                className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              />
+            )}
+            <span className="relative z-20">{item.name}</span>
+          </a>
+          {hovered === idx && item.subLabel && item.subLink && (
+            <motion.a
+              initial={{ opacity: 0, y: -4 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              className="absolute left-1/2 top-full z-30 mt-2 -translate-x-1/2 whitespace-nowrap rounded-xl border border-blue-200 bg-white/95 px-4 py-1.5 text-sm font-medium text-neutral-700 shadow-sm transition-colors hover:bg-blue-50"
+              href={item.subLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.subLabel}
+            </motion.a>
           )}
-          <span className="relative z-20">{item.name}</span>
-        </a>
+        </div>
       ))}
     </motion.div>
   );

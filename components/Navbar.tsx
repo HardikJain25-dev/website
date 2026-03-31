@@ -17,6 +17,8 @@ export function Navigation() {
     {
       name: "Home",
       link: "/",
+      subLabel: "VBUSS, Delhi",
+      subLink: "https://vbuss.org/index.php/",
     },
     {
       name: "About the Journal",
@@ -56,7 +58,7 @@ export function Navigation() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton variant="dark">Sumbit Your Paper</NavbarButton>
+            <NavbarButton variant="dark">Submit Your Paper</NavbarButton>
           </div>
         </NavBody>
 
@@ -90,7 +92,7 @@ export function Navigation() {
                 variant="primary"
                 className="w-full"
               >
-                Sumbit Your Paper
+                Submit Your Paper
               </NavbarButton>
               
             </div>
@@ -103,5 +105,3 @@ export function Navigation() {
     </div>
   );
 }
-
-

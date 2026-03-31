@@ -154,7 +154,9 @@ export default function ArchivesPage() {
               Volume 1, 2024
             </h3>
             <p className="text-sm text-muted-foreground mt-2">
-              Coming soon
+              <a href="https://vbuss.org/inaugural-issue-volume-1-august-2024" className="text-primary hover:underline">
+                Read More
+              </a>
             </p>
           </div>
         </div>

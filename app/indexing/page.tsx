@@ -144,7 +144,7 @@ export default function IndexingPage() {
               </div>
             </div>
 
-            <div className="bg-card rounded-2xl border border-border p-6">
+            {/* <div className="bg-card rounded-2xl border border-border p-6">
               <h3 className="font-semibold text-foreground mb-4">
                 Indexing Applications
               </h3>
@@ -170,7 +170,7 @@ export default function IndexingPage() {
                   DOAJ
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
