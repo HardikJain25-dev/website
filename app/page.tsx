@@ -252,7 +252,7 @@ export default function Home() {
                   The International Journal of Bharatiya Knowledge System
                 </h1>
               </div>
-              <h2 className="text-lg font-semibold text-black/80 mb-4">
+              <h2 className="text-[17px] font-semibold text-black/80 mb-4">
                 A Peer Reviewed International Multi- Disciplinary Journal   
               </h2>
               <p className="text-black/80 text-center mb-2 max-w-2xl text-sm md:text-base drop-shadow">
@@ -487,7 +487,7 @@ export default function Home() {
                   "Social sciences, literature, and cultural studies",
                   "Vedic, Ayurvedic, and philosophical research",
                   "Historical and civilizational studies",
-                  "Sciences and mathematics in Bharatiya context",
+                  
                   "Sciences and IKS",
                   "Mathematics and IKS",
                   "Value, Business and Society",
